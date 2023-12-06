@@ -1,0 +1,489 @@
+@media screen and (max-width: 600px){
+    body{
+        margin: 0;
+    }
+    #navigation{
+        display: flex;
+        flex-direction: column; /* changer la direction de flex pour être en colonne */
+        width: 100%;
+        align-items:center;
+        justify-content: space-around;
+        height: 100vh;
+        transition: height 0.5s; /* ajouter une transition pour la hauteur */
+        overflow-y: auto;
+        background-color: gainsboro;
+    }
+    .nav{
+        text-decoration: none;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large; /* augmenter la taille de la police pour la version portable */
+        border-top: 5px solid #000; 
+        border-bottom: 5px solid #000; 
+        height: 32px;
+    }
+    /* Ajouter un bouton pour réduire la navigation */
+    button {
+        margin-bottom: -20px;
+        width: 200px;
+        height: 40px;
+        border-radius: 25px;
+        font-size: large;
+        font-weight: 300;
+        color:black;
+        border-style:groove;
+        background-color: lightblue;
+        box-shadow: 0px 0px 5px 1px inset;
+    }
+    .nav.responsive button {
+        display: block; /* afficher le bouton lorsque la navigation est réduite */
+    }
+    .box{
+        width:100%;
+        height: 1240px;
+    }
+    .box_left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* utiliser la largeur totale de l'écran pour les mobiles */
+        height: 500px;
+        background-color:black;
+        flex-wrap: wrap;
+    }
+    #photo_profile{
+        position: relative;
+        top:30px;
+        width: auto;
+        height: auto;
+        box-shadow: 0px 0px 45px 0px inset;
+    }
+    #profile_title{
+        padding: 30px;
+        font-size:250%;
+        margin: 0;
+        text-align: center;
+        background-color: gainsboro;
+    }
+    #presentation{
+        font-size:x-large;
+        margin: 0;
+        padding: 25px;
+        font-weight: bold;
+        background-color: lightblue;
+    }
+    span{
+        text-decoration: underline;
+        font-size: 130%;
+    }
+    .box_right{
+        display: inline-block; 
+        width: 100%;
+        height: auto;
+        background-color: black;
+    }
+    .box_A{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: gainsboro;
+    }
+    .frame{
+        width: 170px;
+        height: 250px;
+        background-color:white;
+        display:grid;
+        place-items: center;
+        margin: 10px;
+    }
+    img{
+        background: transparent;
+    }
+    .progress{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .progress_bar_01{
+        flex-direction: row;
+        width: 30px;
+        height: 15px;
+        background-color: blue;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .progress_bar_02{
+        flex-direction: row;
+        width: 110px;
+        height: 15px;
+        background-color: white;
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+    }
+    .a{
+        width: 90px;
+        height: 15px;
+    }
+    .b{
+        width: 50px;
+        height: 15px;
+    }
+    .titre{
+        color: white;
+        text-decoration: underline;
+        margin: 20px;
+    }
+    .nom_techno{
+        margin: 0;
+    }
+    .nom_employeur{
+        text-decoration: underline;
+        font-size: 130%;
+        background-color:lightskyblue;
+        display: block;
+        width: 100%;
+        padding-left:5px;
+        margin-bottom: 0px;
+    }
+    .temps{
+        text-decoration: underline;
+        font-size: 130%;
+        background-color: white;
+        display: block;
+        width: 100%;
+        padding-left: 5px;
+        margin-top: 0px;
+    }
+    ul{
+        text-align: left; 
+        margin-right: auto;
+    }
+}
+/* Styles pour tablette standard */
+@media screen and (min-width: 601px) and (max-width: 1250px) {
+    body{
+        margin: 0;
+    }
+    #navigation{
+        display: flex;
+        flex-direction: row; /* changer la direction de flex pour être en ligne */
+        width: 100%;
+        align-items:center;
+        justify-content: space-evenly;
+        height: 100px;
+        background-color: gainsboro;
+    }
+    button {
+        display: none;
+    }
+    .nav{
+        color: black;
+        font-size: x-large; /* augmenter la taille de la police pour la version portable */
+        border-top: 3px solid #000; 
+        border-bottom: 3px solid #000; 
+        height: 25px;
+    }
+    .box{
+        width:100%;
+        height: 100%;
+    }
+    .box_left{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* utiliser la largeur totale de l'écran pour les mobiles */
+        height: 500px;
+        background-color:black;
+        flex-wrap: wrap;
+    }
+    #photo_profile{
+        position: relative;
+        top:90px;
+        left: 200px;
+        width: auto;
+        height: auto;
+        box-shadow: 0px 0px 45px 0px inset;
+    }
+    #profile_title{
+        position: relative;
+        top:0px;
+        left: -215px;
+        width: 100%;
+        font-size:250%;
+        text-align: center;
+        background-color: gainsboro;
+    }
+    .presentation{
+        height:0px;
+    }
+    #presentation{
+        height:300px;
+        width: 360px;
+        position: relative;
+        top:-490px;
+        left: 50px;
+        font-size:x-large;
+        padding: 25px;
+        font-weight: bold;
+        background-color: lightblue;
+    }
+    span{
+        text-decoration: underline;
+        font-size: 130%;
+    }
+    .box_right{
+        display: inline-block; 
+        width: 100%;
+        height: auto;
+        background-color: black;
+    }
+    .box_A{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color:gainsboro;
+    }
+    .frame{
+        width: 170px;
+        height: 250px;
+        background-color:white;
+        display:grid;
+        place-items: center;
+        margin: 10px;
+    }
+    img{
+        background: transparent;
+    }
+    .progress{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .progress_bar_01{
+        flex-direction: row;
+        width: 30px;
+        height: 15px;
+        background-color: blue;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .progress_bar_02{
+        flex-direction: row;
+        width: 110px;
+        height: 15px;
+        background-color: white;
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+    }
+    .a{
+        width: 90px;
+        height: 15px;
+    }
+    .b{
+        width: 50px;
+        height: 15px;
+    }
+    .titre{
+        color: white;
+        text-decoration: underline;
+        margin: 20px;
+    }
+    .nom_techno{
+        margin: 0;
+    }
+    .nom_employeur{
+        text-decoration: underline;
+        font-size: 130%;
+        background-color:lightskyblue;
+        display: block;
+        width: 100%;
+        padding-left:5px;
+        margin-bottom: 0px;
+    }
+    .temps{
+        text-decoration: underline;
+        font-size: 130%;
+        background-color: white;
+        display: block;
+        width: 100%;
+        padding-left: 5px;
+        margin-top: 0px;
+    }
+    ul{
+        text-align: left; 
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1251px)
+{
+    body{
+        margin: 0;
+    }
+    button {
+        display: none;
+    }
+    #navigation{
+        background-color: gainsboro;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        align-items:center;
+        justify-content: space-evenly;
+        height: 100px !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .nav{
+        color: black;
+        font-size: x-large;
+        border-top: 3px solid #000; 
+        border-bottom: 3px solid #000; 
+        height: 25px;
+        display: block !important;
+    }
+    #photo_profile{
+        position: relative;
+        top:20px;
+        left: 40px;
+        width: 233px;
+        height:241px;
+    }
+    #profile_title{
+        background-color: gainsboro;
+        height: 135px;
+        width: 260px;
+        position: relative;
+        top: -40px;
+        left: 220px;
+        padding: 0;
+        font-size:200%;
+        margin: 0;
+        text-align: center;
+    }
+    #presentation{
+        margin: 0;
+    }
+    .presentation{
+        display: flex;
+        width: 240px;
+        height: 265px;
+        font-size:110%;
+        margin: 0;
+        padding: 25px;
+        font-weight: bold;
+        background-color: lightblue;
+        position: fixed;
+        top:390px;
+        left: 10px;
+    }
+    .box{
+        margin-top: 100px; 
+        overflow-y: auto;
+        height: calc(100vh - 100px); 
+    }
+    .box_left{
+        width: 550px;
+        height: 700px;
+        background-color: black;
+        position: fixed;
+        top: 100px;
+    }
+    .box_right{
+        display: inline-block;
+        width: 969px;
+        height: auto;
+        background-color:black;
+        position: relative;
+        left: 550px;
+    }
+    .box_A{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: gainsboro;
+    }
+    .frame{
+        width: 170px;
+        height: 250px;
+        background-color: white;
+        display:grid;
+        place-items: center;
+        margin: 10px;
+    }
+    img{
+        background: transparent;
+    }
+    .progress{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .progress_bar_01{
+        flex-direction: row;
+        width: 30px;
+        height: 15px;
+        background-color: blue;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+    .progress_bar_02{
+        flex-direction: row;
+        width: 110px;
+        height: 15px;
+        background-color: white;
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+    }
+    .a{
+        width: 90px;
+        height: 15px;
+    }
+    .b{
+        width: 50px;
+        height: 15px;
+    }
+    .titre{
+        color: white;
+        text-decoration: underline;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-top: 5px;
+    }
+    .nom_techno{
+        margin: 0;
+    }
+    .nom_employeur{
+        text-decoration: underline;
+        font-size: 130%;
+        background-color: lightskyblue;
+        display: flex;
+        width: 100%;
+        padding-left:5px;
+        margin-bottom: 0px;
+    }
+    .temps{
+        text-decoration: underline;
+        font-size: 130%;
+        background-color: white;
+        display: block;
+        width: 100%;
+        padding-left: 5px;
+        margin-top: 0px;
+    }
+    ul{
+        text-align: left; 
+        margin-right: auto;
+    }
+    li{
+        font-size: large;
+    }
+}
